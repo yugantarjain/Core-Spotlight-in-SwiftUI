@@ -44,6 +44,7 @@ struct ContentView: View {
 			attributeSet.displayName = $0.description
 //			attributeSet.thumbnailData = UIImage(named: "custom")?.jpegData(compressionQuality: 0.7)
 //			attributeSet.phoneNumbers = ["12345678"]
+// 			attributeSet.supportsPhoneCall = true
 
 			let searchableItem = CSSearchableItem(uniqueIdentifier: $0.description, domainIdentifier: "sample", attributeSet: attributeSet)
 			searchableItems.append(searchableItem)
